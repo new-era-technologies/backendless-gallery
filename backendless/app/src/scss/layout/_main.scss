@@ -1,0 +1,28 @@
+.main {
+    &__wrapper {
+        padding: 20px 0;
+        background: #e2f1f8;
+    }
+    &__title {
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    &__inner {
+        margin: 10px 0;
+        display: grid;
+        grid-template-rows: 250px 100px 250px 100px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+    }
+    &__inner > div {
+        background: #cccccc;
+    }
+    &__box1, &__box5 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    &__box5 {
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+}
