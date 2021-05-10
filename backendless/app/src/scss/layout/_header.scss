@@ -19,7 +19,11 @@
     }
     &__logo {
         color: #000000;
+        font-size: 16px;
         text-decoration: none;
+    }
+    &__select-mode {
+        display: flex;
     }
     &__buttons-mode,
     &__radio-mode {
