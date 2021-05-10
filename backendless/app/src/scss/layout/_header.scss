@@ -44,6 +44,10 @@ input {
     margin: 0;
 }
 
+.dark-header-wrapper {
+    background: #212121;
+}
+
 @media screen and (min-width: 640px) and (max-width: 1079px) {
     .header {
         &__buttons-mode {

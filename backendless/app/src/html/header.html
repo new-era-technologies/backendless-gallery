@@ -3,23 +3,23 @@
         <div class="header__inner">
             <a href="/" class="header__logo">Backendless</a>
             <div class="header__select-mode">
-                <select>
+                <select class="change">
                     <option value="light">Light Theme</option>
                     <option value="dark">Dark Theme</option>
                     <option value="backendless">Backendless Theme</option>
                 </select>
             </div>
             <div class="header__buttons-mode">
-                <button>Light Theme</button>
-                <button>Dark Theme</button>
-                <button>Backendless Theme</button>
+                <button class="change" value="light">Light Theme</button>
+                <button class="change" value="dark">Dark Theme</button>
+                <button class="change" value="backendless">Backendless Theme</button>
             </div>
             <div class="header__radio-mode">
-                <input type="radio" id="radio-light" name="theme" value="light">
+                <input type="radio" id="radio-light" class="change" name="theme" value="light">
                 <label for="radio-light">Light Theme</label>
-                <input type="radio" id="radio-dark" name="theme" value="dark">
+                <input type="radio" id="radio-dark" class="change" name="theme" value="dark">
                 <label for="radio-dark">Dark Theme</label>
-                <input type="radio" id="radio-backendless" name="theme" value="backendless">
+                <input type="radio" id="radio-backendless" class="change" name="theme" value="backendless">
                 <label for="radio-backendless">Backendless Theme</label>
             </div>
         </div>
