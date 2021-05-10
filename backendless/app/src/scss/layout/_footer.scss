@@ -51,6 +51,14 @@
     background: #212121;
 }
 
+.backendless-footer-wrapper {
+    background: #757575;
+}
+
+.dark-backendless-footer-text {
+    color: #ffffff;
+}
+
 @media screen and (min-width: 640px) {
     .footer {
         &__container {

@@ -2,8 +2,11 @@
 
 const changeColorButtons = document.querySelectorAll('.change'),
     headerWrapper = document.querySelector('.header__wrapper'),
+    headerText = document.querySelector('.header__logo'),
     mainWrapper = document.querySelector('.main__wrapper'),
-    footerWrapper = document.querySelector('.footer__wrapper');
+    mainText = document.querySelector('.main__title'),
+    footerWrapper = document.querySelector('.footer__wrapper'),
+    footerText = document.querySelectorAll('.footer__link');
 
 for (let i = 0; i < changeColorButtons.length; i++) {
     changeColorButtons[i].addEventListener('click', function () {
@@ -14,15 +17,41 @@ for (let i = 0; i < changeColorButtons.length; i++) {
 function changeColor(val) {
     switch (val) {
         case 'light':
-            alert('light mode');
+            headerWrapper.classList.remove('backendless-header-wrapper');
+            mainWrapper.classList.remove('backendless-main-wrapper');
+            footerWrapper.classList.remove('backendless-footer-wrapper');
+
+            headerWrapper.classList.remove('dark-header-wrapper');
+            mainWrapper.classList.remove('dark-main-wrapper');
+            footerWrapper.classList.remove('dark-footer-wrapper');
+
+            headerText.classList.remove('dark-backendless-header-text');
+            mainText.classList.remove('dark-backendless-main-text');
+            footerText.classList.remove('dark-backendless-footer-text');
             break;
         case 'dark':
+            headerWrapper.classList.remove('backendless-header-wrapper');
+            mainWrapper.classList.remove('backendless-main-wrapper');
+            footerWrapper.classList.remove('backendless-footer-wrapper');
+
             headerWrapper.classList.add('dark-header-wrapper');
+            headerText.classList.add('dark-backendless-header-text');
             mainWrapper.classList.add('dark-main-wrapper');
+            mainText.classList.add('dark-backendless-main-text');
             footerWrapper.classList.add('dark-footer-wrapper');
+            footerText.classList.add('dark-backendless-footer-text');
             break;
         case 'backendless':
-            alert('backendless mode');
+            headerWrapper.classList.remove('dark-header-wrapper');
+            mainWrapper.classList.remove('dark-main-wrapper');
+            footerWrapper.classList.remove('dark-footer-wrapper');
+
+            headerWrapper.classList.add('backendless-header-wrapper');
+            headerText.classList.add('dark-backendless-header-text');
+            mainWrapper.classList.add('backendless-main-wrapper');
+            mainText.classList.add('dark-backendless-main-text');
+            footerWrapper.classList.add('backendless-footer-wrapper');
+            footerText.classList.add('dark-backendless-footer-text');
             break;
         default:
             alert('light mode');
