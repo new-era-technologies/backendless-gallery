@@ -34,6 +34,31 @@
     color: #ffffff;
 }
 
+.modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    background: rgba(0,0,0,0.5);
+    z-index: 2;
+}
+
+.image-fixed {
+    width: 200px;
+    height: 120px;
+    position: fixed;
+    transform: scale(1);
+    top: calc(50% - 60px);
+    left: calc(50% - 100px);
+    z-index: 3;
+}
+
+.modal-block {
+    display: block;
+}
+
 @media screen and (max-width: 639px) {
     .main {
         &__inner {
