@@ -3,6 +3,7 @@
 const changeColorButtons = document.querySelectorAll('.change'),
     headerWrapper = document.querySelector('.header__wrapper'),
     headerText = document.querySelector('.header__logo'),
+    headerLabels = document.querySelectorAll('label'),
     mainWrapper = document.querySelector('.main__wrapper'),
     mainText = document.querySelector('.main__title'),
     footerWrapper = document.querySelector('.footer__wrapper'),
@@ -26,8 +27,9 @@ function changeColor(val) {
             footerWrapper.classList.remove('dark-footer-wrapper');
 
             headerText.classList.remove('dark-backendless-header-text');
+            headerLabels.forEach(el => el.classList.remove('dark-backendless-header-text'));
             mainText.classList.remove('dark-backendless-main-text');
-            footerText.classList.remove('dark-backendless-footer-text');
+            footerText.forEach(el => el.classList.remove('dark-backendless-footer-text'));
             break;
         case 'dark':
             headerWrapper.classList.remove('backendless-header-wrapper');
@@ -36,10 +38,11 @@ function changeColor(val) {
 
             headerWrapper.classList.add('dark-header-wrapper');
             headerText.classList.add('dark-backendless-header-text');
+            headerLabels.forEach(el => el.classList.add('dark-backendless-header-text'));
             mainWrapper.classList.add('dark-main-wrapper');
             mainText.classList.add('dark-backendless-main-text');
             footerWrapper.classList.add('dark-footer-wrapper');
-            footerText.classList.add('dark-backendless-footer-text');
+            footerText.forEach(el => el.classList.add('dark-backendless-footer-text'));
             break;
         case 'backendless':
             headerWrapper.classList.remove('dark-header-wrapper');
@@ -48,10 +51,11 @@ function changeColor(val) {
 
             headerWrapper.classList.add('backendless-header-wrapper');
             headerText.classList.add('dark-backendless-header-text');
+            headerLabels.forEach(el => el.classList.add('dark-backendless-header-text'));
             mainWrapper.classList.add('backendless-main-wrapper');
             mainText.classList.add('dark-backendless-main-text');
             footerWrapper.classList.add('backendless-footer-wrapper');
-            footerText.classList.add('dark-backendless-footer-text');
+            footerText.forEach(el => el.classList.add('dark-backendless-footer-text'));
             break;
         default:
             alert('light mode');
