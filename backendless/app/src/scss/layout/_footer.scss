@@ -31,6 +31,7 @@
         margin-left: 15px;
     }
     &__list {
+        margin-top: 10px;
         list-style-type: none;
         display: flex;
         align-items: center;
@@ -121,6 +122,9 @@
             height: 50px;
             flex-direction: row;
             justify-content: space-between;
+        }
+        &__list {
+            margin-top: 0;
         }
     }
 }

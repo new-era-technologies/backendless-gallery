@@ -21,6 +21,7 @@
         color: #000000;
         font-size: 16px;
         text-decoration: none;
+        animation: 2s ease-in infinite alternate logo;
     }
     &__select-mode {
         display: flex;
@@ -32,7 +33,22 @@
     }
 }
 
-button, label {
+@keyframes logo {
+    from {
+        letter-spacing: 3px;
+        color: red;
+    }
+    50% {
+        color: yellow;
+    }
+    100%{
+        letter-spacing: -3px;
+        color: green;
+    }
+}
+
+button,
+label {
     margin: 0 5px;
     font-size: 13px;
     line-height: 14px;
