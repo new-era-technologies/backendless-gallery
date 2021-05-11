@@ -7,7 +7,8 @@ const changeColorButtons = document.querySelectorAll('.change'),
     mainWrapper = document.querySelector('.main__wrapper'),
     mainText = document.querySelector('.main__title'),
     footerWrapper = document.querySelector('.footer__wrapper'),
-    footerText = document.querySelectorAll('.footer__link');
+    footerText = document.querySelectorAll('.footer__link'),
+    socImages = document.querySelectorAll('.black');
 
 for (let i = 0; i < changeColorButtons.length; i++) {
     changeColorButtons[i].addEventListener('click', function () {
@@ -30,6 +31,7 @@ function changeColor(val) {
             headerLabels.forEach(el => el.classList.remove('dark-backendless-header-text'));
             mainText.classList.remove('dark-backendless-main-text');
             footerText.forEach(el => el.classList.remove('dark-backendless-footer-text'));
+            socImages.forEach(it => it.classList.contains('white') ? it.classList.replace('white', 'black') : null);
             break;
         case 'dark':
             headerWrapper.classList.remove('backendless-header-wrapper');
@@ -43,6 +45,7 @@ function changeColor(val) {
             mainText.classList.add('dark-backendless-main-text');
             footerWrapper.classList.add('dark-footer-wrapper');
             footerText.forEach(el => el.classList.add('dark-backendless-footer-text'));
+            socImages.forEach(it => it.classList.contains('black') ? it.classList.replace('black', 'white') : null);
             break;
         case 'backendless':
             headerWrapper.classList.remove('dark-header-wrapper');
@@ -56,6 +59,7 @@ function changeColor(val) {
             mainText.classList.add('dark-backendless-main-text');
             footerWrapper.classList.add('backendless-footer-wrapper');
             footerText.forEach(el => el.classList.add('dark-backendless-footer-text'));
+            socImages.forEach(it => it.classList.contains('black') ? it.classList.replace('black', 'white') : null);
             break;
         default:
             alert('light mode');

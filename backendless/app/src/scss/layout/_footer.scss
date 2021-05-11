@@ -30,10 +30,6 @@
     &__link:nth-child(2) {
         margin-left: 15px;
     }
-    &__link--soc > img {
-        width: 20px;
-        height: 20px;
-    }
     &__list {
         list-style-type: none;
         display: flex;
@@ -44,6 +40,66 @@
     }
     &__item:first-child {
         margin-left: 0;
+    }
+    &__item > a {
+        width: 20px;
+        height: 20px;
+    }
+    &__item:nth-child(1) > a.black {
+        background: url(../assets/img/icons/insta.svg);
+        background-size: cover;
+    }
+    &__item:nth-child(1) > a.white {
+        background: url(../assets/img/icons/insta-w.svg);
+        background-size: cover;
+    }
+    &__item:nth-child(2) > a.black {
+        background: url(../assets/img/icons/face.svg);
+        background-size: cover;
+    }
+    &__item:nth-child(2) > a.white {
+        background: url(../assets/img/icons/face-w.svg);
+        background-size: cover;
+    }
+    &__item:nth-child(3) > a.black {
+        background: url(../assets/img/icons/twit.svg);
+        background-size: cover;
+    }
+    &__item:nth-child(3) > a.white {
+        background: url(../assets/img/icons/twit-w.svg);
+        background-size: cover;
+    }
+    &__item:nth-child(4) > a.black {
+        background: url(../assets/img/icons/tele.svg);
+        background-size: cover;
+    }
+    &__item:nth-child(4) > a.white {
+        background: url(../assets/img/icons/tele-w.svg);
+        background-size: cover;
+    }
+    &__item:nth-child(5) > a.black {
+        background: url(../assets/img/icons/yout.svg);
+        background-size: cover;
+    }
+    &__item:nth-child(5) > a.white {
+        background: url(../assets/img/icons/yout-w.svg);
+        background-size: cover;
+    }
+    &__item:nth-child(6) > a.black {
+        background: url(../assets/img/icons/vk.svg);
+        background-size: cover;
+    }
+    &__item:nth-child(6) > a.white {
+        background: url(../assets/img/icons/vk-w.svg);
+        background-size: cover;
+    }
+    &__item:nth-child(7) > a.black {
+        background: url(../assets/img/icons/mail.svg);
+        background-size: cover;
+    }
+    &__item:nth-child(7) > a.white {
+        background: url(../assets/img/icons/mail-w.svg);
+        background-size: cover;
     }
 }
 
